@@ -1,0 +1,6 @@
+DirectoryIndex index.php
+RewriteEngine On
+
+RewriteRule ^photo_update photo_update.php
+RewriteRule ^photo_delete photo_delete.php
+RewriteRule ^photo_details photo_details.php

@@ -1,0 +1,22 @@
+RewriteEngine On
+Options -Indexes
+DirectoryIndex index.php
+RewriteRule ^case/([0-9]+)/$ case.php?postid=$1 [NC]
+RewriteRule ^settings/$ settings.php [NC]
+RewriteRule ^favorites/$ favorites.php [NC]
+RewriteRule ^logout/$ logout.php?logout [NC]
+RewriteRule ^category/([0-9]+)/$ index.php?cid=$1 [NC]
+RewriteRule ^comment/$ comment.php [NC]
+RewriteRule ^register/$ register.php [NC]
+RewriteRule ^login/$ login.php [NC]
+RewriteRule ^(.*)/login login.php?page=$1
+RewriteRule ^(.*)/register register.php?page=$1
+RewriteRule ^reg/$ reg.php
+RewriteRule ^changepass/$ changepass.php
+RewriteRule ^changemail/$ changemail.php
+RewriteRule ^changeavatar/$ changeavatar.php
+RewriteRule ^ajaxlogin/$ ajaxlogin.php
+RewriteRule ^register_session register_session.php
+RewriteRule ^destroy_session destroy_session.php
+RewriteRule ^add_to_favorites add_to_favorites.php
+RewriteRule ^delete delete.php
